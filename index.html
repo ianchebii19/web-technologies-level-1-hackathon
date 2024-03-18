@@ -1,24 +1,86 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>Ramon Coding academy Registration Form</title>
+<link rel="shortcut icon" type="image/jpg" href="image/favicon (2).ico"/>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="ramon"> <img class="logo" src="image/redirect.jpg" alt="Logo">
+      <h2>Ramon Coding Academy</h2></div>
+   
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Courses</a>
+      <a href="#">Contacts</a>
+    </nav>
+  </header>
+ 
+<section class="intro">
+  <div>
+    <p>Ramon Coding Academy is an educational institution that focuses on teaching the skills and knowledge needed to develop software applications, websites, and other digital products</p>
+      <h2>Software Engineering Immersive</h2>
+      <p>
+        Our flagship course, and the most complete way to get your engineering career started. Includes 3 projects and 1 week of career preparation to ensure you get hired.</p>
+      <h2>Get Hired</h2>
+      <p>Every Codeworks graduate gets unlimited personalized career support until they land their dream job. Our alumni can be found at amazing companies around the world.</p>
+  </div>
+  <div><img  class="appli" src="image/Coding.png" alt="Ramon "></div>
+</section>
+      
+    </div>
+      
+    
+  </section>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+  <section class="forma">
+    <form>
+      <h2>Application Form</h2>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label><br>
+        <input type="text" placeholder="Kibet Kemboi" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input  type="email" placeholder="kibetkemboi@gmail.com"id="email" name="email" ><br>
+        <label for="phone" >Phone:</label><br>
+        <input type="tel" id="phone" placeholder="+254700000000"name="phone"><br>
+        <label for="age">Age:</label><br>
+        <input type="number" placeholder="18" id="age" name="age"><br>
+      </fieldset>
 
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="gender" value="male"><br>
+        <label for="female">Female:</label>
+        <input type="radio" id="female" name="gender" value="female"><br>
+      </fieldset>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+      <label for="subjects">Subjects:</label><br>
+      <select id="subjects" name="subjects" multiple>
+        <option value="English">Python</option>
+        <option value="Math">Java</option>
+        <option value="Science">Web Development</option>
+        <option value="Art and Craft">C++</option>
+        <option value="Agriculture">MYSQL</option>
+        
+      </select><br>
 
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password"><br>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+      <input type="hidden" id="sessionId" name="sessionId">
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+      <div ><button type="reset" class="resetbtn btn">Cancel</button>
+        <button type="submit" class="submitbtn btn">Register</button>
+       </div>
+    </form>
+  </section>
+</body>
+</html>
